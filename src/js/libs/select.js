@@ -7,7 +7,7 @@ import { formValidate } from "../files/forms/forms.js";
 // Базовые стили состоят в src/scss/forms.scss
 // Файл базовых стилей src/scss/forms/select.scss
 /*
-Документация:
+
 Сниппет (HTML): sel
 */
 /*

@@ -1,5 +1,4 @@
 /*
-Документация по работе в шаблоне: https://www.lightgalleryjs.com/docs/
 Документация плагина: https://www.lightgalleryjs.com/docs/
 Сниппет(HTML):
 */

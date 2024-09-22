@@ -7,9 +7,7 @@ import { isMobile, _slideUp, _slideDown, _slideToggle, FLS } from "../functions.
 import { gotoBlock } from "../scroll/gotoblock.js";
 //================================================================================================================================================================================================================================================================================================================================
 
-/*
-Документация: https://start-template.ru/rabota-s-formami-i-elementami-form-chertogi-frilansera-v3-0-0/
-*/
+
 
 // Работа с полями формы.
 export function formFieldsInit(options = { viewPass: false, autoHeight: false }) {
