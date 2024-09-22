@@ -1,9 +1,8 @@
 {
-	"name": "templateFront",
+	"name": "nidrafsm",
 	"version": "3.0.0",
 	"description": "Start template with Gulp and Webpack",
 	"author": "Gleb Rysev",
-	"private": true,
 	"license": "",
 	"type": "module",
 	"scripts": {
