@@ -22,9 +22,9 @@ $mail->Port = 465;
 
 /*
 //От кого письмо
-$mail->setFrom('botkot1991@gmail.com', 'Такие дела'); // Указать нужный E-mail
+$mail->setFrom('user@gmail.com', 'Такие дела'); // Указать нужный E-mail
 //Кому отправить
-$mail->addAddress('botkot1991@gmail.com'); // Указать нужный E-mail
+$mail->addAddress('user@gmail.com'); // Указать нужный E-mail
 //Тема письма
 $mail->Subject = 'Приветствие';
 
