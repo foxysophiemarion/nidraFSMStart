@@ -1,9 +1,9 @@
 {
-	"name": "mystarttemplate",
-	"version": "3.0.0",
+	"name": "mytemplatefront",
+	"version": "5.3.4",
 	"description": "Start template with Gulp and Webpack",
 	"author": "Gleb Rysev",
-	"license": "",
+	"license": "ISC",
 	"type": "module",
 	"scripts": {
 		"start": "npm i --legacy-peer-deps",

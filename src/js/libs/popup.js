@@ -1,7 +1,7 @@
 //Модуль попапов
 // Сниппет (HTML): pl
 
-// Подключение функционала "Чертоги Фрилансера"
+// Подключение функционала
 import { isMobile, bodyLockStatus, bodyLock, bodyUnlock, bodyLockToggle, FLS } from "../files/functions.js";
 import { frontModules } from "../files/modules.js";
 

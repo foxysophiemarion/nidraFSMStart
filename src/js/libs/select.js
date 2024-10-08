@@ -1,4 +1,4 @@
-// Подключение функционала "Чертоги Фрилансера"
+// Подключение функционала
 import { isMobile, _slideUp, _slideDown, _slideToggle, FLS } from "../files/functions.js";
 import { frontModules } from "../files/modules.js";
 import { formValidate } from "../files/forms/forms.js";

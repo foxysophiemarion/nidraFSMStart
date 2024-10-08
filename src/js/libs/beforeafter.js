@@ -1,4 +1,4 @@
-// Подключение функционала "Чертоги фрилансера"
+// Подключение функционала
 import { isMobile, FLS } from "../files/functions.js";
 // Подключение списка активных модулей
 import { frontModules } from "../files/modules.js";

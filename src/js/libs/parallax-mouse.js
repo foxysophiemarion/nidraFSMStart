@@ -2,7 +2,7 @@
 //(c)Фрилансер по жизни, "Хмурый Кот"
 
 
-//Подключение функционала "Чертоги Фрилансера"
+//Подключение функционала
 import { isMobile, FLS } from "../files/functions.js";
 import { frontModules } from "../files/modules.js";
 

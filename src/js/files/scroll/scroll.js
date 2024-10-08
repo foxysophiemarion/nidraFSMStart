@@ -1,4 +1,4 @@
-// Подключение функционала "Чертоги Фрилансера"
+// Подключение функционала
 import { isMobile, getHash, menuClose, getDigFormat } from "../functions.js";
 import { frontModules } from "../../files/modules.js";
 // Модуль прокрутки к блоку
