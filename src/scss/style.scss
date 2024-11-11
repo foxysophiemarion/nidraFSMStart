@@ -4,12 +4,15 @@
 @import "base/mixins";
 
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
-//@import "fonts/fonts";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+// Подключить если есть локальные файлы шрифтов
+@import "fonts/fonts";
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
-//@import "fonts/icons";
+@import "fonts/icons";
 
+// ============================================================================================================================================================================================================================================================================================================================================================================================
 // Настройка шаблона ============================================================================================================================================================================================================================================================================================================================================================================================
 // ============================================================================================================================================================================================================================================================================================================================================================================================
 
@@ -34,10 +37,10 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1840;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 30;
+$containerPadding: 20;
 
 // Ширина срабатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -92,6 +95,48 @@ body {
 	// Фикс для слайдеров
 	> * {
 		min-width: 0;
+	}
+}
+
+.wrapper.background-image {
+	background:
+		url("@img/leasing/bg.png") 0 0 / cover no-repeat,
+		url("@img/leasing/decor01.png") 0 40% no-repeat,
+		url("@img/leasing/decor02.png") right 30% no-repeat;
+	@media (max-width: toEm(1650)) {
+		background:
+			url("@img/leasing/bg.png") 0 0 / cover no-repeat,
+			url("@img/leasing/decor01.png") 0 40% no-repeat,
+			url("@img/leasing/decor02.png") right 30% no-repeat;
+	}
+	@media (max-width: toEm(1250)) {
+		background: url("@img/leasing/bg.png") 0 0 / cover no-repeat;
+	}
+}
+
+.wrapper.background-product {
+	background:
+		url("@img/insineratorcremator/decor.png") 50% / 100% no-repeat,
+		url("@img/insineratorcremator/bg.png") 0 0 / cover no-repeat;
+	@media (max-width: toEm(1650)) {
+		background:
+			url("@img/insineratorcremator/decor.png") 50% / 100% no-repeat,
+			url("@img/insineratorcremator/bg.png") 0 0 / cover no-repeat;
+	}
+	@media (max-width: toEm(1250)) {
+		background:
+			url("@img/insineratorcremator/decor.png") 50% / 100% no-repeat,
+			url("@img/insineratorcremator/bg.png") 0 0 / cover no-repeat;
+	}
+	@media (max-width: $tablet) {
+		background:
+			url("@img/insineratorcremator/decor.png") 50% / 100% no-repeat,
+			url("@img/insineratorcremator/bg.png") 0 0 / cover no-repeat;
+	}
+	@media (max-width: $mobileSmall) {
+		background:
+			url("@img/insineratorcremator/decor.png") 50% / 100% no-repeat,
+			url("@img/insineratorcremator/bg.png") 0 0 / cover no-repeat;
 	}
 }
 

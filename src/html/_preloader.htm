@@ -1,9 +1,9 @@
-<div id="front-preloader">
+<div id="fsm-preloader">
 	<!-- Скрипт прелоадера -->
 	<script>
 		function preloader() {
 			const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
-			const preloaderContainer = document.querySelector('#front-preloader');
+			const preloaderContainer = document.querySelector('#fsm-preloader');
 			if (preloaderImages.length) {
 				const preloaderStyleTemplate = `
 				<style>
@@ -14,7 +14,7 @@
 						box-sizing: border-box;
 					}
 					/* Главный блок */
-					.front-preloader{
+					.fsm-preloader{
 						pointer-events: none;
 						z-index: -1;
 						position: fixed;
@@ -27,20 +27,20 @@
 						align-items: center;
 					}
 					/* Блок с элементами */
-					.front-preloader__body{
+					.fsm-preloader__body{
 						padding: 0.93rem;
 						max-width: 31.25rem;
 						display: flex;
 						flex-direction: column;
 					}
 					/* Блок с счетчиком */
-					.front-preloader__counter{
+					.fsm-preloader__counter{
 						font-size: 10rem;
 					}
 					/* Прогресбар */
-					.front-preloader__line{}
+					.fsm-preloader__line{}
 					/* Линия прогресбара */
-					.front-preloader__line span{
+					.fsm-preloader__line span{
 						display: inline-block;
 						transition: width 0.2s ease;
 						height: 0.8rem;
@@ -51,11 +51,11 @@
 						touch-action: none;
 						overscroll-behavior: none;
 					}
-					.loading body>*:not(.front-preloader){
+					.loading body>*:not(.fsm-preloader){
 						opacity: 0;
 						visibility: hidden;
 					}
-					.loaded body>*:not(.front-preloader){
+					.loaded body>*:not(.fsm-preloader){
 						transition: opacity 0.5s ease 0s;
 						opacity: 1;
 						visibility: visible;
@@ -65,18 +65,18 @@
 				document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
 
 				const preloaderTemplate = `
-					<div class="front-preloader">
-						<div class="front-preloader__body">
-							<div class="front-preloader__counter">0%</div>
-							<div class="front-preloader__line"><span></span></div>
+					<div class="fsm-preloader">
+						<div class="fsm-preloader__body">
+							<div class="fsm-preloader__counter">0%</div>
+							<div class="fsm-preloader__line"><span></span></div>
 						</div>
 					</div>`;
 				document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
 
 				const
-					preloader = document.querySelector('.front-preloader'),
-					showPecentLoad = document.querySelector('.front-preloader__counter'),
-					showLineLoad = document.querySelector('.front-preloader__line span'),
+					preloader = document.querySelector('.fsm-preloader'),
+					showPecentLoad = document.querySelector('.fsm-preloader__counter'),
+					showLineLoad = document.querySelector('.fsm-preloader__line span'),
 					htmlDocument = document.documentElement;
 
 				let imagesLoadedCount = counter = progress = 0;

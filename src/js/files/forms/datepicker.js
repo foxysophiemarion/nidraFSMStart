@@ -1,8 +1,8 @@
 /* Календарь */
 
-// Подключение функционала
+// Подключение функционала "Чертоги Фрилансера"
 // подключение списка активных модулей
-import { frontModules } from "../modules.js";
+import { fsmModules } from "../modules.js";
 
 // Подключение модуля
 import datepicker from 'js-datepicker';
@@ -22,5 +22,5 @@ if (document.querySelector('[data-datepicker]')) {
 
 		}
 	});
-	frontModules.datepicker = picker;
+	fsmModules.datepicker = picker;
 }

@@ -1,7 +1,7 @@
 /* Маски для полей (в работе)*/
-// Подключение функционала
+// Подключение функционала "Чертоги Фрилансера"
 // Подключение списка активных модулей
-import { frontModules } from "../modules.js";
+import { fsmModules } from "../modules.js";
 
 // Подключение модуля
 import "inputmask/dist/inputmask.min.js";
@@ -9,7 +9,7 @@ import "inputmask/dist/inputmask.min.js";
 document.addEventListener('DOMContentLoaded', function () {
 	const inputMasks = document.querySelectorAll('input');
 	if (inputMasks.length) {
-		frontModules.inputmask = Inputmask().mask(inputMasks);
+		fsmModules.inputmask = Inputmask().mask(inputMasks);
 	}
 
 	// Применение маски для конкретного поля ввода телефона

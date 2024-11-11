@@ -1,9 +1,10 @@
 {
-	"name": "mytemplatefront",
-	"version": "5.3.4",
+	"name": "fsm-start",
+	"version": "3.1.1",
 	"description": "Start template with Gulp and Webpack",
-	"author": "Gleb Rysev",
-	"license": "ISC",
+	"author": "FSM",
+	"private": true,
+	"license": "",
 	"type": "module",
 	"scripts": {
 		"start": "npm i --legacy-peer-deps",
@@ -16,7 +17,7 @@
 		"devbuild": "gulp build --build --nowebp",
 		"noimgbuild": "gulp build --build --noimgopt",
 		"tmp": "gulp -f gulpfile.tmp.js",
-		"bem": "start-bemtree-from-html"
+		"bem": "fsm-bemtree-from-html"
 	},
 	"devDependencies": {
 		"@babel/cli": "latest",

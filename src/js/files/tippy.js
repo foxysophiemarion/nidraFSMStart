@@ -1,7 +1,7 @@
-// Подключение функционала
+// Подключение функционала "Чертоги Фрилансера"
 import { isMobile, FLS } from "./functions.js";
 // Подключение списка активных модулей
-import { frontModules } from "./modules.js";
+import { fsmModules } from "./modules.js";
 
 // Подключение с node_modules
 import tippy from 'tippy.js';
@@ -12,6 +12,6 @@ import "../../scss/libs/tippy.scss";
 //import 'tippy.js/dist/tippy.css';
 
 // Запускаем и добавляем в объект модулей
-frontModules.tippy = tippy('[data-tippy-content]', {
+fsmModules.tippy = tippy('[data-tippy-content]', {
 
 });

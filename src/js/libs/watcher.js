@@ -1,6 +1,6 @@
-// Подключение функционала
+// Подключение функционала "Чертоги фрилансера"
 import { isMobile, uniqArray, FLS } from "../files/functions.js";
-import { frontModules } from "../files/modules.js";
+import { fsmModules } from "../files/modules.js";
 
 // Наблюдатель объектов [всевидящее око]
 // Data-watch - можно писать значения для применения кастомного кода
@@ -180,4 +180,4 @@ class ScrollWatcher {
 	}
 }
 // Запускаем и добавляем в объект модулей
-frontModules.watcher = new ScrollWatcher({});
+fsmModules.watcher = new ScrollWatcher({});

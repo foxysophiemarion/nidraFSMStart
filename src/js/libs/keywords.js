@@ -1,6 +1,6 @@
-// Подключение функционала
+// Подключение функционала"Чертоги фрилансера"
 import { isMobile, FLS } from "../files/functions.js";
-import { frontModules } from "../files/modules.js";
+import { fsmModules } from "../files/modules.js";
 
 function gridKeywords() {
 	/*

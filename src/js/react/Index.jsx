@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-import someImg from "@img/cover.jpg";
+import someImg from "@img/cover.png";
 
 const App = () => (
 	<>
@@ -17,7 +16,6 @@ const App = () => (
 const root = document.querySelector("#root")
 	? document.querySelector("#root")
 	: document.querySelector(".wrapper");
-
 // Main rendering
 ReactDOM.createRoot(root).render(
 	<React.StrictMode>

@@ -1,5 +1,5 @@
 // Подключение списка активных модулей
-import { frontModules } from "./modules.js";
+import { fsmModules } from "./modules.js";
 
 /* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
 export function isWebp() {
@@ -612,26 +612,40 @@ export function rippleEffect() {
 		}
 	});
 }
+
+// Модуль "IBG"
+//========================================================================================================================================================
+export function ibg() {
+
+	let ibg = document.querySelectorAll(".ibg");
+	for (var i = 0; i < ibg.length; i++) {
+		if (ibg[i].querySelector('img')) {
+			ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
+		}
+	}
+}
+
+ibg();
 // Модуль "Сustom сursor" =======================================================================================================================================================================================================================
 export function customCursor(isShadowTrue) {
 	const wrapper = document.querySelector('[data-custom-cursor]') ? document.querySelector('[data-custom-cursor]') : document.documentElement;
 	if (wrapper && !isMobile.any()) {
 		// Создаем и добавляем объект курсора
 		const cursor = document.createElement('div');
-		cursor.classList.add('front-cursor');
+		cursor.classList.add('fsm-cursor');
 		cursor.style.opacity = 0;
-		cursor.insertAdjacentHTML('beforeend', `<span class="front-cursor__pointer"></span>`);
-		isShadowTrue ? cursor.insertAdjacentHTML('beforeend', `<span class="front-cursor__shadow"></span>`) : null;
+		cursor.insertAdjacentHTML('beforeend', `<span class="fsm-cursor__pointer"></span>`);
+		isShadowTrue ? cursor.insertAdjacentHTML('beforeend', `<span class="fsm-cursor__shadow"></span>`) : null;
 		wrapper.append(cursor);
 
-		const cursorPointer = document.querySelector('.front-cursor__pointer');
+		const cursorPointer = document.querySelector('.fsm-cursor__pointer');
 		const cursorPointerStyle = {
 			width: cursorPointer.offsetWidth,
 			height: cursorPointer.offsetHeight
 		}
 		let cursorShadow, cursorShadowStyle;
 		if (isShadowTrue) {
-			cursorShadow = document.querySelector('.front-cursor__shadow');
+			cursorShadow = document.querySelector('.fsm-cursor__shadow');
 			cursorShadowStyle = {
 				width: cursorShadow.offsetWidth,
 				height: cursorShadow.offsetHeight
@@ -670,7 +684,7 @@ export function customCursor(isShadowTrue) {
 export function FLS(message) {
 	setTimeout(() => {
 		if (window.FLS) {
-			console.log(message);
+			console.debug(message);
 		}
 	}, 0);
 }
@@ -752,16 +766,4 @@ export function dataMediaQueries(array, dataSetValue) {
 		}
 	}
 }
-
-//========================================================================================================================================================
-export function ibg() {
-
-	let ibg = document.querySelectorAll(".ibg");
-	for (var i = 0; i < ibg.length; i++) {
-		if (ibg[i].querySelector('img')) {
-			ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
-		}
-	}
-}
-ibg();
 //================================================================================================================================================================================================================================================================================================================

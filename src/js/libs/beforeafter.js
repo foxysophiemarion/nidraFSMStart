@@ -1,7 +1,7 @@
-// Подключение функционала
+// Подключение функционала "Чертоги фрилансера"
 import { isMobile, FLS } from "../files/functions.js";
 // Подключение списка активных модулей
-import { frontModules } from "../files/modules.js";
+import { fsmModules } from "../files/modules.js";
 // Подключение стилей необходимых для работы модуля
 import "../../scss/base/beforeafter.scss";
 
@@ -107,5 +107,5 @@ class BeforeAfter {
 
 
 // Запускаем и добавляем в объект модулей
-frontModules.ba = new BeforeAfter({});
+fsmModules.ba = new BeforeAfter({});
 

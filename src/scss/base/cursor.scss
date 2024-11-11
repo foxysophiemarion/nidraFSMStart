@@ -1,7 +1,7 @@
 * {
 	cursor: none !important;
 }
-.front-cursor {
+.fsm-cursor {
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -52,18 +52,18 @@
 		}
 	}
 	&._hover {
-		.front-cursor__pointer::after {
+		.fsm-cursor__pointer::after {
 			transform: scale(0.8);
 		}
-		.front-cursor__shadow::after {
+		.fsm-cursor__shadow::after {
 		}
 	}
 	&._active {
-		.front-cursor__pointer::after {
+		.fsm-cursor__pointer::after {
 			transition: all 0.05s ease 0s;
 			transform: scale(0.3);
 		}
-		.front-cursor__shadow::after {
+		.fsm-cursor__shadow::after {
 		}
 	}
 }

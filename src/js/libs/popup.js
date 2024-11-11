@@ -1,9 +1,10 @@
 //Модуль попапов
+// Документация по работе в шаблоне: https://start-template.ru/modul-popup-vytekayushhie-modalnye-okna-chertogi-frilansera-v3-0-0/
 // Сниппет (HTML): pl
 
-// Подключение функционала
+// Подключение функционала "Чертоги Фрилансера"
 import { isMobile, bodyLockStatus, bodyLock, bodyUnlock, bodyLockToggle, FLS } from "../files/functions.js";
-import { frontModules } from "../files/modules.js";
+import { fsmModules } from "../files/modules.js";
 
 // Клаcс Popup
 class Popup {
@@ -360,5 +361,5 @@ class Popup {
 }
 
 // Запускаем и добавляем в объект модулей
-frontModules.popup = new Popup({});
+fsmModules.popup = new Popup({});
 

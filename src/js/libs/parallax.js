@@ -1,4 +1,4 @@
-import { frontModules } from '../files/modules.js';
+import { fsmModules } from '../files/modules.js';
 
 class Parallax {
 	constructor(elements) {
@@ -87,5 +87,5 @@ Parallax.Each = class {
 	}
 }
 if (document.querySelectorAll('[data-prlx-parent]')) {
-	frontModules.parallax = new Parallax(document.querySelectorAll('[data-prlx-parent]'));
+	fsmModules.parallax = new Parallax(document.querySelectorAll('[data-prlx-parent]'));
 }

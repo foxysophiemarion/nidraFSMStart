@@ -32,15 +32,15 @@ export const pathtofiles = {
 	rootFolder: rootFolder,
 	srcFolder: srcFolder,
 	// Путь к нужной папке на удаленном сервере.
-	ftp: ``,
+	ftp: `/public_html/wp-content/themes/praim`,
 	//Пример: загрузить в папку 2022 далее в папку с названием проекта
 	// ftp: `2022/${rootFolder}`
 };
 
 // Настройка FTP соединения
 export const configFTP = {
-	host: "", // Адрес FTP сервера
-	user: "", // Имя пользователя
-	password: "", // Пароль
+	host: "77.222.40.238", // Адрес FTP сервера
+	user: "botkot1993", // Имя пользователя
+	password: "18hAoMDp6H^FQiFt", // Пароль
 	parallel: 5 // Кол-во одновременных потоков
 }

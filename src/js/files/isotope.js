@@ -2,10 +2,10 @@
 
 */
 
-// Подключение функционала
+// Подключение функционала "Чертоги Фрилансера"
 import { isMobile, FLS } from "./functions.js";
 // Подключение списка активных модулей
-import { frontModules } from "./modules.js";
+import { fsmModules } from "./modules.js";
 
 import Isotope from 'isotope-layout/js/isotope.js';
 

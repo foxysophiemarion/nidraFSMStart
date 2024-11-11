@@ -1,13 +1,15 @@
-// Подключение функционала
+// Подключение функционала "Чертоги Фрилансера"
 // Подключение списка активных модуле
-import { frontModules } from "../modules.js";
+import { fsmModules } from "../modules.js";
 // Вспомогательные функции
 import { isMobile, _slideUp, _slideDown, _slideToggle, FLS } from "../functions.js";
 // Модуль прокрутки к блоку
 import { gotoBlock } from "../scroll/gotoblock.js";
 //================================================================================================================================================================================================================================================================================================================================
 
-
+/*
+Документация: https://start-template.ru/rabota-s-formami-i-elementami-form-chertogi-frilansera-v3-0-0/
+*/
 
 // Работа с полями формы.
 export function formFieldsInit(options = { viewPass: false, autoHeight: false }) {
@@ -137,12 +139,12 @@ export let formValidate = {
 					checkbox.checked = false;
 				}
 			}
-			if (frontModules.select) {
+			if (fsmModules.select) {
 				let selects = form.querySelectorAll('div.select');
 				if (selects.length) {
 					for (let index = 0; index < selects.length; index++) {
 						const select = selects[index].querySelector('select');
-						frontModules.select.selectBuild(select);
+						fsmModules.select.selectBuild(select);
 					}
 				}
 			}
@@ -213,9 +215,9 @@ export function formSubmit() {
 		// Попап показывает, если подключен модуль попапов
 		// и для формы указана настройка
 		setTimeout(() => {
-			if (frontModules.popup) {
+			if (fsmModules.popup) {
 				const popup = form.dataset.popupMessage;
-				popup ? frontModules.popup.open(popup) : null;
+				popup ? fsmModules.popup.open(popup) : null;
 			}
 		}, 0);
 		// Очищаем форму

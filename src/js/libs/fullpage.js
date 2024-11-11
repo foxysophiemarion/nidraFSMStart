@@ -1,5 +1,5 @@
 import { isMobile } from "../files/functions.js";
-import { frontModules } from "../files/modules.js";
+import { fsmModules } from "../files/modules.js";
 
 /*
 	data-fp - Оболочка
@@ -648,5 +648,5 @@ export class FullPage {
 }
 // Запускаем и добавляем в объект модулей
 if (document.querySelector('[data-fp]')) {
-	frontModules.fullpage = new FullPage(document.querySelector('[data-fp]'), '');
+	fsmModules.fullpage = new FullPage(document.querySelector('[data-fp]'), '');
 }

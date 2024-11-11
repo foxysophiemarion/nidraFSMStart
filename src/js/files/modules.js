@@ -1,1 +1,1 @@
-export const frontModules = {}
+export const fsmModules = {}

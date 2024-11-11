@@ -1,13 +1,13 @@
-// Подключение функционала
+// Подключение функционала "Чертоги Фрилансера"
 import { isMobile, _slideUp, _slideDown, _slideToggle, FLS } from "../files/functions.js";
-import { frontModules } from "../files/modules.js";
+import { fsmModules } from "../files/modules.js";
 import { formValidate } from "../files/forms/forms.js";
 
 // Подключение файла стилей
 // Базовые стили состоят в src/scss/forms.scss
 // Файл базовых стилей src/scss/forms/select.scss
 /*
-
+Документация:
 Сниппет (HTML): sel
 */
 /*
@@ -553,6 +553,6 @@ class SelectConstructor {
 	}
 }
 // Запускаем и добавляем в объект модулей
-frontModules.select = new SelectConstructor({});
+fsmModules.select = new SelectConstructor({});
 
 
